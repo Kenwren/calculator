@@ -25,7 +25,7 @@ This is a straightforward JavaScript, HTML, and CSS calculator application for t
 
 <h2>DEMO</h2>
 
-You can try out the calculator [here]().
+You can try out the calculator [here](https://kenwren.github.io/calculator/).
 
 
 <h2>Prerequisites</h2>
