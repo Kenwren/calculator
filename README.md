@@ -30,7 +30,7 @@ You can try out the calculator [here](https://kenwren.github.io/calculator/).
 
 <h2>Prerequisites</h2>
 
-Web browser (such as Chrome, Firefox, or Safari) is required.
+Web browser (such as Chrome, Firefox, Edge (Windows), or Safari(Apple)) is required.
 
 
 <h2>Installation</h2>
@@ -74,3 +74,27 @@ The styles in the index.css file can be changed to alter the calculator's appear
   background: #555;
   color: #fff;
 }
+```
+
+The JavaScript in the script.js file can be used to add the function of the calculator's buttons (=), (AC), (DEL) in order to execute the action.
+```JavaScript
+arr.forEach(button => {
+    button.addEventListener('click', (e) =>{
+        if(e.target.innerHTML == '='){
+            string = eval(string);
+            input.value = string;
+        }
+
+        else if(e.target.innerHTML == 'AC'){
+            string = "";
+            input.value = string;
+        }
+        else if(e.target.innerHTML == 'DEL'){
+            string = string.substring(0, string.length-1);
+            input.value = string;
+        }
+        else{
+            string += e.target.innerHTML;
+            input.value = string;
+        }
+```
