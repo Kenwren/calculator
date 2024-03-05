@@ -70,9 +70,42 @@ cd calculator
 
 The styles in the index.css file can be changed to alter the calculator's appearance. Please feel free to experiment with different fonts, colors, and sizes to suit your tastes.
 ```css
-.calculator {
-  background: #555;
-  color: #fff;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+}
+
+.calculator{
+    border: 1px solid #717377;
+    padding: 20px;
+    border-radius: 16px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+
+}
+
+input{
+    width: 320px;
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgbs(84, 84, 84, 0.1);
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    color: #ffffff;
 }
 ```
 
